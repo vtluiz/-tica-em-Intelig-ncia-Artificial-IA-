@@ -1,0 +1,29 @@
+import matplotlib.pyplot as plt
+
+# Data for the chart
+paper_titles = [
+    "The AI Index 2022 Annual Report",
+    "Exciting, Useful, Worrying, Futuristic: Public Perception of AI",
+    "Ethics of AI: A Systematic Literature Review of Principles and Challenges",
+    "AI Ethics Issues in Real World: Evidence from AI Incident Database",
+    "The Different Faces of AI Ethics Across the World",
+    "A Framework for Ethical AI at the United Nations",
+    "Worldwide AI Ethics: a review of 200 guidelines",
+    "Beyond Near- and Long-Term: Towards a Clearer Account of Research",
+    "ESR: Ethics and Society Review of AI Research",
+    "On the Current and Emerging Challenges of Developing Fair and Ethical AI"
+]
+
+number_of_pages = [230, 12, 21, 9, 20, 23, 21, 6, 18, 10]
+
+# Create bar chart
+plt.figure(figsize=(10, 6))
+plt.barh(paper_titles, number_of_pages, color='skyblue')
+plt.xlabel('Number of Pages')
+plt.title('Number of Pages per Paper in AI Ethics Topics')
+
+# Display the chart
+plt.tight_layout()
+plt.show()
+
+
