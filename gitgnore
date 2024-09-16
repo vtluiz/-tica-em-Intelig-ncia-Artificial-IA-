@@ -1,0 +1,18 @@
+
+### .gitignore
+
+```bash
+# Ignore Python bytecode and logs
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore environment-related files
+env/
+.venv/
+.vscode/
+.idea/
+
+# Ignore dataset and output files
+data/*.csv
+output/
